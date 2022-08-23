@@ -1,5 +1,7 @@
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
@@ -25,6 +27,12 @@ public class App {
 
         final float PI = 3.14F; // constant variable
         System.out.println(PI);
+
+        System.out.println();
+        playWithMaths();
+
+        System.out.println();
+        readInput();
     }
 
     public static void dateHandler(Date date) {
@@ -69,11 +77,35 @@ public class App {
     }
 
     public static void playWithMaths() {
-        int result = Math.round(1.1F);
-        int result2 = (int)Math.ceil(1.1F);
-        int result3 = (int)Math.floor(1.1F);
+        int result = Math.round(1.9F);
+        int result2 = (int)Math.ceil(1.9F);
+        int result3 = (int)Math.floor(1.9F);
         System.out.println(result);
         System.out.println(result2);
         System.out.println(result3);
+        float fraction = 0.9F;
+        int currency = 1000;
+        System.out.println(NumberFormat.getCurrencyInstance().format(currency));
+        System.out.println(NumberFormat.getPercentInstance().format(fraction));
+    }
+
+    public static void readInput() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your first name: ");
+        String firstName = System.console().readLine().trim();
+
+        System.out.print("Enter your last name: ");
+        String lastName = scanner.next().trim();
+        
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
+
+        String fullname = firstName + " " + lastName;
+
+        System.out.println("Hello, " + fullname + "," + " you are " + age + " years old.");
+
+        scanner.close();
     }
 }
