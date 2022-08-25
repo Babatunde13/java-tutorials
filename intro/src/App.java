@@ -49,6 +49,7 @@ public class App {
         numbers[2] = 3;
         numbers[3] = 4;
         numbers[4] = 5;
+        // int numbersCount = numbers.length;
         System.out.println(Arrays.toString(numbers));
 
         int[][] matrix = new int[3][3];
@@ -65,6 +66,10 @@ public class App {
 
         System.out.println(Arrays.deepToString(matrix2));
         System.out.println();
+
+        for (int[] row : matrix2) {
+            System.out.println(Arrays.toString(row));
+        }
 
         arithmetic();
     }
