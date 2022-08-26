@@ -21,6 +21,7 @@ public class Student {
         this.lastName = lastName;
         this.grade = grade;
         this.age = age;
+        System.out.println("Student created");
     }
 
     public Student(String fullname) {
@@ -45,5 +46,11 @@ public class Student {
         System.out.println("Last name: " + this.lastName);
         System.out.println("Grade: " + this.grade);
         System.out.println("Age: " + this.age);
+    }
+
+    // Garbage collector
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Student is destroyed by the Garbage Collector");
     }
 }

@@ -27,5 +27,11 @@ public class StudentCaller {
         student4.changeGrade(100);
         student4.changeAge(40);
         student4.print();
+
+        Student student;
+        for (int i = 0; i < 1000000; i++) {
+            student = new Student();
+            student.print();
+        }
     }
 }
