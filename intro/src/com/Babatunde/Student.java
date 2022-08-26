@@ -1,22 +1,24 @@
+package com.Babatunde;
+
 public class Student {
     String firstName;
     String lastName;
     int grade;
     int age;
 
-    Student () {
+    public Student () {
         this("John", "Doe", 70, 20);
     }
 
-    Student (String firstName, String lastName, int grade) {
+    public Student (String firstName, String lastName, int grade) {
         this(firstName, lastName, grade, 20);
     }
 
-    Student (String firstName, String lastName) {
+    public Student (String firstName, String lastName) {
         this(firstName, lastName, 70, 20);
     }
 
-    Student (String firstName, String lastName, int grade, int age) {
+    public Student (String firstName, String lastName, int grade, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.grade = grade;
@@ -53,5 +55,10 @@ public class Student {
     protected void finalize() throws Throwable {
         System.out.println("Student is destroyed by the Garbage Collector");
         super.finalize();
+    }
+
+    @Override
+    public String toString() {
+        return this.firstName + " " + this.lastName;
     }
 }

@@ -1,3 +1,5 @@
+import com.Babatunde.Student;
+
 public class Conditional {
     public static void main(String[] args) {
         int num1 = 1;
@@ -8,6 +10,9 @@ public class Conditional {
         System.out.println(num1 >= num2);
         System.out.println(num1 <= num2);
         System.out.println(num1 != num2);
+
+        Student student1 = new Student();
+        System.out.println(student1);
 
         if (num1 == num2) {
             System.out.println("num1 is equal to num2");
