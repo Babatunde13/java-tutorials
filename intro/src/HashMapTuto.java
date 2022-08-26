@@ -1,6 +1,8 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
+/**
+ * Hash Map tutorial
+ */
 public class HashMapTuto {
     public static void main (String[] args) {
         Map <String, String> map = new HashMap<String, String>();
