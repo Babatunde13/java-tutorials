@@ -7,6 +7,10 @@ public class Square extends Shape {
         super("Square");
         this.side = side;
     }
+
+    public static void log () {
+        System.out.println("Square");
+    }
     
     @Override
     public double area() {
@@ -16,5 +20,13 @@ public class Square extends Shape {
     @Override
     public double perimeter() {
         return 4 * side;
-    }  
+    }
+
+    // Cannot override the final method from Shape
+    // @Override
+    // void print() {
+    //     System.out.println("Shape: " + name);
+    //     System.out.println("Area: " + area());
+    //     System.out.println("Perimeter: " + perimeter());
+    // }
 }

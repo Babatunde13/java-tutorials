@@ -9,6 +9,10 @@ public class Triangle extends Shape {
         this.base = base;
         this.height = height;
     }
+
+    public static void log () {
+        System.out.println("Triangle");
+    }
     
     @Override
     public double area() {
