@@ -13,6 +13,7 @@ public class Main {
         );
 
         babatunde.toString();
+        System.out.println(human2);
         StringBuilder a = new StringBuilder("");
         a.append("Babatunde");
         System.out.println(a);

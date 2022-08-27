@@ -54,7 +54,7 @@ public class Student {
     @Override
     protected void finalize() throws Throwable {
         System.out.println("Student is destroyed by the Garbage Collector");
-        super.finalize();
+        // super.finalize();
     }
 
     @Override
