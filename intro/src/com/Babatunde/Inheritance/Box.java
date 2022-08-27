@@ -1,5 +1,7 @@
 package com.Babatunde.Inheritance;
 
+import com.Babatunde.AccessControl.Random;
+
 public class Box {
     double l;
     double h;
@@ -24,6 +26,10 @@ public class Box {
     }
 
     double volume() {
+        Random r = new Random(10, "Babatunde");
+        System.out.println(r);
+        // r.name; -> error
+        // r.x; -> works
         return this.h * this.w * this.l;
     }
 
