@@ -1,6 +1,16 @@
 package com.Babatunde.StaticExamples;
 
+import com.Babatunde.InterfaceDemo.A;
+
 public class Main {
+    enum Week implements A {
+        Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday;
+
+        @Override
+        public void fun() {
+            System.out.println("Fun");
+        }
+    }
     public static void main(String[] args) {
         Human babatunde = new Human(
             20, "Babatunde Koiki", 500,
@@ -18,5 +28,12 @@ public class Main {
         a.append("Babatunde");
         System.out.println(a);
         System.out.println(Human.population);
+
+        Week monday = Week.Monday;
+        System.out.println(monday);
+        for (Week day : Week.values()) {
+            System.out.println(day);
+        }
+        monday.fun();
     }
 }
