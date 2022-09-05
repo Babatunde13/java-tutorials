@@ -23,7 +23,10 @@ public class Conditional {
         int income = Integer.parseInt(System.console().readLine("Enter your income: "));
         boolean hasHighIncome = (income > 100_000);
         System.out.println(hasHighIncome);
-        String className = income > 100_000 ? "First"  : income > 50_000 ? "Business" : "Economy";
+        String className = 
+            income > 100_000 ? "First"  :
+            income > 50_000 ? "Business" :
+            "Economy";
 
         System.out.println(className);
 
