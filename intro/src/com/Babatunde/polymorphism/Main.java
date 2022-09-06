@@ -15,9 +15,9 @@ public class Main {
         System.out.println(square.area());
 
         Shape.log();
-        circle.log();
-        triangle.log();
-        square.log();
+        Circle.log();
+        Triangle.log();
+        Square.log();
     }
 
     // Types of polymorphism

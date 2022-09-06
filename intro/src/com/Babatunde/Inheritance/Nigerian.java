@@ -12,6 +12,7 @@ public class Nigerian extends Human {
             20, "Babatunde Koiki", 500,
             5.7f, false, Gender.MALE
         );
+
         System.out.println(babatunde);
     }
 }

@@ -21,14 +21,17 @@ public class CustomGenericArrayList<T> {
         if (this.isFull()) {
             this.resize();
         }
+
         this.data[this.size++] = value;
     }
 
     private void resize() {
         Object[] newData = new Object[this.data.length * 2];
+
         for (int i = 0; i < this.data.length; i++) {
             newData[i] = this.data[i];
         }
+
         this.data = newData;
     }
 
@@ -61,9 +64,11 @@ public class CustomGenericArrayList<T> {
     public T remove(int index) {
         T value = this.get(index);
         this.isValidIndex(index);
+
         for (int i = index; i < this.size - 1; i++) {
             this.data[i] = this.data[i + 1];
         }
+
         this.size--;
         return value;
     }

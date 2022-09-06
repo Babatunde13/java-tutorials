@@ -29,6 +29,7 @@ public class CustomArrayList {
         for (int i = 0; i < this.data.length; i++) {
             newData[i] = this.data[i];
         }
+
         this.data = newData;
     }
 
@@ -84,6 +85,7 @@ public class CustomArrayList {
         customArrayList.add(2);
         customArrayList.add(3);
         customArrayList.add(4);
+
         System.out.println(customArrayList);
     }
 }

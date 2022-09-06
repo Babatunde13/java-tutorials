@@ -40,12 +40,14 @@ public class NiceCar {
     public static void main(String[] args) {
         System.out.println("");
         NiceCar niceCar = new NiceCar(new PowerEngine(), new Radio());
+
         niceCar.start();
         niceCar.startMusic();
         niceCar.accelerate();
         niceCar.stopMusic();
         niceCar.stop();
         System.out.println("");
+
         niceCar.upgradeEngine(new ElectricEngine());
         niceCar.upgradeMedia(new CDPlayer());
         niceCar.start();

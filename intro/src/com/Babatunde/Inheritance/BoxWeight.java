@@ -26,6 +26,7 @@ public class BoxWeight extends Box {
         StringBuilder s = new StringBuilder(super.toString());
         s.setCharAt(s.length() - 1, ',');
         s.append(" weighs " + this.weight + "kg.");
+    
         return s.toString();
     }
 }

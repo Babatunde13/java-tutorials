@@ -7,6 +7,7 @@ public class SubRandom extends Random {
 
     public static void main(String[] args) {
         SubRandom subRandom = new SubRandom(10, "Babatunde");
+
         System.out.println(subRandom);
         // System.out.println(subRandom.num);
         System.out.println(subRandom.getNum());
