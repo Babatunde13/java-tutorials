@@ -20,10 +20,10 @@ public class App {
         
         System.out.println();
         Date date = new Date();
-        dateHandler(date);
+        App.dateHandler(date);
 
         System.out.println();
-        playWithArray();
+        App.playWithArray();
 
         final float PI = 3.14F; // constant variable
         System.out.println(PI);
@@ -71,7 +71,7 @@ public class App {
             System.out.println(Arrays.toString(row));
         }
 
-        arithmetic();
+        App.arithmetic();
     }
 
     public static void arithmetic() {
