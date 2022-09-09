@@ -77,6 +77,7 @@ public class CustomGenericArrayList<T> {
         if (index < 0 || index >= this.size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + this.size);
         }
+        System.out.println("Index: " + index + ", Size: " + this.size);
     }
 
     public String toString () {
