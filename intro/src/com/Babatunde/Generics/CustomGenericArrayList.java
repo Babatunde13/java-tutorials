@@ -92,5 +92,9 @@ public class CustomGenericArrayList<T> {
         customGenericArrayList.add(4);
         // customGenericArrayList.add("4");
         System.out.println(customGenericArrayList);
+        customGenericArrayList.remove(2);
+        System.out.println(customGenericArrayList);
+        customGenericArrayList.clear();
+        System.out.println(customGenericArrayList);
     }
 }
