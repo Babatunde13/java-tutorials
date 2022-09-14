@@ -5,7 +5,8 @@ public class Search {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         Search linearSearch = new Search(arr);
-        boolean exist = linearSearch.linearSearch(5);
+        int exist = linearSearch.linearSearch(5);
+        System.out.println(new Search(arr).binarySearch(4));
         System.out.println(exist);
     }
 
@@ -13,16 +14,37 @@ public class Search {
         this.data = data;
     }
 
-    public boolean linearSearch(int target) {
+    public int linearSearch(int target) {
         if (this.data.length == 0) {
-            return false;
+            return -1;
         }
         for (int i = 0; i < this.data.length; i++) {
             if (this.data[i] == target) {
-                return true;
+                return i;
             }
         }
-        return false;
+        return -1;
+    }
+
+    public int binarySearch(int target) {
+        if (this.data.length == 0) {
+            return -1;
+        }
+        
+        int left = 0;
+        int right = this.data.length - 1;
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            if (this.data[mid] == target) {
+                return mid;
+            } else if (this.data[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+
+        return -1;
     }
 
     public static boolean stringSearch(String str, char target) {
